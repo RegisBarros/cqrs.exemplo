@@ -8,6 +8,7 @@ COPY ["src/CQRS.Api/CQRS.Api.csproj", "src/CQRS.Api/"]
 COPY ["src/CQRS.Application/CQRS.Application.csproj", "src/CQRS.Application/"]
 COPY ["src/CQRS.Persistence/CQRS.Persistence.csproj", "src/CQRS.Persistence/"]
 COPY ["src/CQRS.Core/CQRS.Core.csproj", "src/CQRS.Core/"]
+COPY nuget.config ./
 RUN dotnet restore "src/CQRS.Api/CQRS.Api.csproj"
 COPY . .
 WORKDIR "/src/src/CQRS.Api"
