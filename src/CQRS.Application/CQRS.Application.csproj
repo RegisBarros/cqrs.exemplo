@@ -5,7 +5,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="EPPlus.Core" Version="1.5.4" />
     <PackageReference Include="MediatR" Version="6.0.0" />
+    <PackageReference Include="MyFramework.Logger" Version="1.0.2" />
+    <PackageReference Include="MyFramework.SmtpServer" Version="1.0.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
   </ItemGroup>
 
   <ItemGroup>
