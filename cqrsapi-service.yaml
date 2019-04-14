@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: azure-vote-back
+  labels:
+    app: cqrs-api
+  name: cqrs-api
+  namespace: cqrs
+spec:
+  externalTrafficPolicy: Cluster
+  ports:
+  - nodePort: 32297
+    port: 80
+    protocol: TCP
+    targetPort: 80
+  selector:
+    app: cqrs-api
+  sessionAffinity: None
+  type: LoadBalancer

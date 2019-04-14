@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: cqrs-api   
+  name: cqrs-api
+  namespace: cqrs
+spec:
+  progressDeadlineSeconds: 600
+  replicas: 1
+  revisionHistoryLimit: 2
+  selector:
+    matchLabels:
+      app: cqrs-api
+  template:
+    metadata:
+      labels:
+        app: cqrs-api
+      name: cqrs-api
+    spec:
+      containers:
+      - name: cqrs-api
+        image: saraivaregis.azurecr.io/regisbarros/cqrs.exemplo:118
+        imagePullPolicy: Always
+        resources:
+          requests:
+            cpu: 100m
+            memory: 128Mi
+          limits:
+            cpu: 250m
+            memory: 256Mi
