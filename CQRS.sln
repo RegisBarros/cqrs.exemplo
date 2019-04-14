@@ -13,7 +13,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CQRS.Api", "src\CQRS.Api\CQ
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{803F1857-23E2-4590-894F-6862B15BFBA5}"
 	ProjectSection(SolutionItems) = preProject
+		Dockerfile = Dockerfile
 		nuget.config = nuget.config
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".docker", ".docker", "{5228F18A-A392-4605-8320-C3F0C1B27EEB}"
+	ProjectSection(SolutionItems) = preProject
+		Dockerfile = Dockerfile
 	EndProjectSection
 EndProject
 Global
