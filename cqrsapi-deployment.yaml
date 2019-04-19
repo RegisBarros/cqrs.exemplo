@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
       - name: cqrs-api
-        image: saraivaregis.azurecr.io/regisbarros/cqrs.exemplo:118
+        image: saraivaregis.azurecr.io/regisbarros/cqrs.exemplo:#{Build.BuildId}#
         imagePullPolicy: Always
         resources:
           requests:
