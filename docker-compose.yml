@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  cqrs.api:
+    image: ${DOCKER_REGISTRY-}cqrsapi
+    build:
+      context: .
+      dockerfile: src/CQRS.Api/Dockerfile

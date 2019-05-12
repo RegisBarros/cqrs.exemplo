@@ -28,6 +28,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".k8s", ".k8s", "{2DB22F36-E
 		cqrsapi-service.yaml = cqrsapi-service.yaml
 	EndProjectSection
 EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{77AE9B55-C0A1-4C10-BABA-F1FE4DD685EA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -50,6 +52,10 @@ Global
 		{20EC6A37-41CE-455B-B67B-5979D6A243CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{20EC6A37-41CE-455B-B67B-5979D6A243CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{20EC6A37-41CE-455B-B67B-5979D6A243CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77AE9B55-C0A1-4C10-BABA-F1FE4DD685EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77AE9B55-C0A1-4C10-BABA-F1FE4DD685EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77AE9B55-C0A1-4C10-BABA-F1FE4DD685EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77AE9B55-C0A1-4C10-BABA-F1FE4DD685EA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
