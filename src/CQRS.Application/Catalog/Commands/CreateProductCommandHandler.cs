@@ -1,7 +1,6 @@
 ﻿using CQRS.Core.Catalog;
 using CQRS.Persistence;
 using MediatR;
-using MyFramework.Logger;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -10,17 +9,17 @@ namespace CQRS.Application.Catalog.Commands
     public class CreateProductCommandHandler : IRequestHandler<CreateProductCommand, string>
     {
         private readonly Repository _repository;
-        private Log _logger;
+        //private Log _logger;
 
         public CreateProductCommandHandler(Repository repository)
         {
             _repository = repository;
-            _logger = new Log();
+            //_logger = new Log();
         }
 
         public async Task<string> Handle(CreateProductCommand request, CancellationToken cancellationToken)
         {
-            await _logger.Info("log my app");
+            //await _logger.Info("log my app");
 
             var category = _repository.GetCategory(request.Category);
             var brand = _repository.GetBrand(request.Brand);
