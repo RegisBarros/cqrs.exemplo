@@ -21,7 +21,7 @@ namespace CQRS.Jobs
 
             Console.WriteLine("Iniciando Job");
 
-            while (true)
+            for(int i = 0; i < 100; i++)
             {
                 var product = ProductFactory.Generate();
 
@@ -33,6 +33,8 @@ namespace CQRS.Jobs
 
                 Thread.Sleep(1000);
             }
+
+            Console.WriteLine("Finalizando Job");
         }
 
         static void SendProduct(CreateProductCommand createProduct)

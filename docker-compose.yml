@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  cqrs.jobs:
+    image: ${DOCKER_REGISTRY-}cqrsjobs
+    build:
+      context: .
+      dockerfile: src/CQRS.Jobs/Dockerfile

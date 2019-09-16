@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "CQRS.Jobs": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}
