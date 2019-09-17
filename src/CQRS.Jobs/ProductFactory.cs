@@ -14,8 +14,8 @@ namespace CQRS.Jobs
 
             faker = new Faker<CreateProductCommand>()
                 .RuleFor(product => product.Title, faker => faker.Commerce.Product())
-                .RuleFor(product => product.Brand, faker => faker.Company.CompanyName())
-                .RuleFor(product => product.Category, faker => faker.Commerce.Department())
+                .RuleFor(product => product.Brand, faker => "0001")
+                .RuleFor(product => product.Category, faker => "0001")
                 .RuleFor(product => product.Code, faker => faker.Commerce.Ean13())
                 .RuleFor(product => product.Description, faker => faker.Commerce.ProductName())
                 .RuleFor(product => product.OldPrice, faker => Convert.ToDecimal(faker.Commerce.Price(1, 100, 2)))

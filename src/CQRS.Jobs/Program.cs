@@ -21,7 +21,7 @@ namespace CQRS.Jobs
 
             Console.WriteLine("Iniciando Job");
 
-            for(int i = 0; i < 100; i++)
+            for(int i = 0; i < 10000; i++)
             {
                 var product = ProductFactory.Generate();
 
@@ -30,8 +30,6 @@ namespace CQRS.Jobs
                 Console.WriteLine(json);
 
                 SendProduct(product);
-
-                Thread.Sleep(1000);
             }
 
             Console.WriteLine("Finalizando Job");
@@ -44,6 +42,7 @@ namespace CQRS.Jobs
             var client = new RestClient(endpoint);
 
             var request = new RestRequest(Method.POST);
+            request.AddHeader("Host", "teste-produto.com");
 
             request.AddJsonBody(createProduct);
 
